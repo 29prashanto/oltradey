@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon | Company Name</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0a0f1c;
+      --bg-soft: #121a2f;
+      --accent: #7dd3a7;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background:
+        linear-gradient(120deg, rgba(10,15,28,0.95), rgba(18,26,47,0.95)),
+        radial-gradient(circle at top right, #1f3b2d, transparent 60%);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .wrapper {
+      max-width: 820px;
+      text-align: center;
+      animation: reveal 1.4s ease;
+    }
+
+    .brand {
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      line-height: 1.15;
+      margin: 0 0 28px;
+      font-weight: 600;
+    }
+
+    .divider {
+      width: 72px;
+      height: 2px;
+      margin: 28px auto;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .note {
+      margin-top: 48px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #6b7280;
+    }
+
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="brand">Oltradey</div>
+
+    <h1>
+      Crafted Slowly.<br>
+      Meant to Last.
+    </h1>
+
+    <div class="divider"></div>
+
+    <p>
+      We are building a premium makhana brand inspired by
+      India’s agricultural heritage and refined for global standards.
+      <br><br>
+      Thoughtful sourcing, honest processing, and quality without compromise —
+      because true nourishment deserves patience.
+    </p>
+
+    <div class="note">
+            <div>Launching Soon</div>
+        <div><em>From India to the World</em></div>
+  </div>
+
+</body>
+</html>
