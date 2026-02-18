@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon | Company Name</title>
+  <title>Coming Soon | Oltradey</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16.png">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -26,8 +31,8 @@
       min-height: 100vh;
       font-family: 'Inter', sans-serif;
       background:
-        linear-gradient(120deg, rgba(10,15,28,0.95), rgba(18,26,47,0.95)),
-        radial-gradient(circle at top right, #1f3b2d, transparent 60%);
+        linear-gradient(140deg, rgba(10,15,28,0.96), rgba(18,26,47,0.96)),
+        radial-gradient(circle at 80% 20%, rgba(125,211,167,0.08), transparent 50%);
       color: var(--text-main);
       display: flex;
       align-items: center;
@@ -38,51 +43,64 @@
     .wrapper {
       max-width: 820px;
       text-align: center;
-      animation: reveal 1.4s ease;
+      animation: reveal 1.6s ease;
     }
 
     .brand {
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      font-size: 13px;
-      color: var(--accent);
-      margin-bottom: 22px;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      height: 150px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(125,211,167,0.25));
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 56px;
+      font-size: 58px;
       line-height: 1.15;
       margin: 0 0 28px;
       font-weight: 600;
+      letter-spacing: -0.5px;
     }
 
     .divider {
-      width: 72px;
+      width: 80px;
       height: 2px;
-      margin: 28px auto;
+      margin: 30px auto;
       background: linear-gradient(90deg, transparent, var(--accent), transparent);
     }
 
     p {
       font-size: 18px;
-      line-height: 1.8;
+      line-height: 1.9;
       color: var(--text-muted);
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
     }
 
     .note {
-      margin-top: 48px;
+      margin-top: 60px;
       font-size: 14px;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       color: #6b7280;
+      text-transform: uppercase;
+    }
+
+    .note em {
+      font-style: normal;
+      color: var(--accent);
+      display: block;
+      margin-top: 8px;
+      letter-spacing: 1px;
     }
 
     @keyframes reveal {
       from {
         opacity: 0;
-        transform: translateY(24px);
+        transform: translateY(30px);
       }
       to {
         opacity: 1;
@@ -95,16 +113,25 @@
         font-size: 38px;
       }
 
+      .logo {
+        height: 48px;
+      }
+
       p {
         font-size: 16px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <div class="wrapper">
-    <div class="brand">Oltradey</div>
+
+    <!-- Replace logo.png with your actual logo file -->
+    <div class="brand">
+      <img src="image/logo_white.png" alt="Oltradey Logo" class="logo">
+    </div>
 
     <h1>
       Crafted Slowly.<br>
@@ -114,16 +141,18 @@
     <div class="divider"></div>
 
     <p>
-      We are building a premium makhana brand inspired by
-      India’s agricultural heritage and refined for global standards.
+      We are building a premium makhana brand inspired by India’s agricultural heritage
+      and refined for global standards.
       <br><br>
-      Thoughtful sourcing, honest processing, and quality without compromise —
+      Thoughtful sourcing. Honest processing. Quality without compromise —
       because true nourishment deserves patience.
     </p>
 
     <div class="note">
-            <div>Launching Soon</div>
-        <div><em>From India to the World</em></div>
+      Launching Soon
+      <em>From India to the World</em>
+    </div>
+
   </div>
 
 </body>
